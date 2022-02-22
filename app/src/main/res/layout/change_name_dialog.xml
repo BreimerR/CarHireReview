@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/input_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/name_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_name_tv"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/name_ed">
+       <TextView
+           android:id="@+id/name_cancel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="180dp"
+           android:text="CANCEL"
+           android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/name_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/name_cancel"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="20dp"
+            android:text="SAVE"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

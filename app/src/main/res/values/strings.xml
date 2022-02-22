@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CarHire(Driver)</string>
+    <string name="login">Sign In</string>
+    <string name="register">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="show_password">Show Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="send">send</string>
+    <string name="logout">sign out</string>
+    <string name="add">add</string>
+</resources>
