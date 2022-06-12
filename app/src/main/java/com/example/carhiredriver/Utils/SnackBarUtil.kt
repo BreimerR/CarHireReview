@@ -10,6 +10,12 @@ import com.example.carhiredriver.R
 import com.google.android.material.snackbar.Snackbar
 
 class SnackBarUtil {
+
+    /**
+     * Try to understand what null safety means in kotlin
+     * view: View will never be null and can never be set to null
+     * view: View? can be set to null and can be null at one point or the other
+     **/
     fun showSnackBar(context : Context, message : String, view : View) {
         if (view != null && context != null){
             val snackBar : Snackbar = Snackbar.make(view,message, Snackbar.LENGTH_LONG)

@@ -1,4 +1,18 @@
 package com.example.carhiredriver.Adapters
+/**
+ * TODO
+ * Don't ise capital letters in your package names
+ * naming is very important to readability
+ * and using such will make collaboration a problem in the future
+ * example
+ *
+ * import com.example.carhiredriver.Something
+ * import com.example.carhiredriver.SomethingElse
+ *
+ * can you distinguish which of this is a class which isn't?
+ *
+ *
+ **/
 
 import android.text.Layout
 import android.view.LayoutInflater

@@ -23,6 +23,14 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+
+/**
+ * TODO IF THE SCREEN IS BLANK YOU ARE MISSING
+ * A USER JOURNEY
+ * Always present something even if it's an image
+ * a sorry just something if it's blank then point
+ * me to where i need to go. Or motivate the user to do so.
+ **/
 class MainActivity : AppCompatActivity() {
     //variable initialization
     lateinit var userProfileImage : CircleImageView
@@ -95,8 +103,16 @@ class MainActivity : AppCompatActivity() {
                     for (postSnapshot in snapshot.children){
                         val model = postSnapshot.child("model").value.toString()
                         val registration = postSnapshot.child("registration").value.toString()
-                        val cc = postSnapshot.child("cc").value.toString()
-                        val price = postSnapshot.child("price").value.toString()
+                        /**
+                         * TODO
+                         * Avoid this.
+                         * 1. You will have null on your user interface. Does a non developer understand what null is??
+                         * 2. You will have problems checking for nulls.
+                         *
+                         * If it's @Nullable don't use "null" just use null
+                         **/
+                        val cc = postSnapshot.child("cc").value?.toString() // Above comment
+                        val price = postSnapshot.child("price").value?.toString() ?: "0"
                         val pricePerDay = "Ksh. $price /day"
                         
                         val vehicleInfo = MyVehiclesModel(model,registration,cc,pricePerDay)

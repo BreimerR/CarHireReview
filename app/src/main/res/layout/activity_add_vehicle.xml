@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/app_background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--TODO Try using constraint layout WILL MAKE THIS MORE FLUED AND AVOID AFFECTING YOUR ADD BUTTON ON DIFFERENT SCREENS-->
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/add_vehicle_back"
